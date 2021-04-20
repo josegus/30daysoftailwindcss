@@ -9,6 +9,7 @@
     <div class="bg-white p-4 rounded-lg shadow-md">
       <component
         :is="component"
+        :use-card-style="false"
         @challenge="challenge = $event"
       ></component>
     </div>

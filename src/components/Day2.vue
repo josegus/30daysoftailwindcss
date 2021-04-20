@@ -1,5 +1,9 @@
 <template>
-  <div class="space-y-4">
+  <div v-if="useCardStyle">
+    <CardChallenge :challenge="challenge" />
+  </div>
+
+  <div v-else class="space-y-4">
     <div>
       <div class="font-bold text-xl">Headings</div>
 
@@ -53,7 +57,19 @@
 </template>
 
 <script>
+import CardChallenge from '@/components/CardChallenge.vue';
+
 export default {
+  props: {
+    useCardStyle: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
+  components: {
+    CardChallenge,
+  },
   created() {
     this.$emit('challenge', this.challenge);
   },
