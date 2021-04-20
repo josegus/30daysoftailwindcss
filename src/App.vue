@@ -1,28 +1,49 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div class="min-h-screen bg-gray-100">
+    <!-- light/dark mode -->
+    <div class="absolute right-1 top-4">
+      <button @click="toLightMode()" class="text-yellow-500">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+      </button>
+
+      <button @click="toDarkMode()" class="text-blue-500">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+      </button>
     </div>
-    <router-view/>
+
+    <div id="app" class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+
+      <!-- nav -->
+      <div id="nav" class="text-center p-8 font-bold text-gray-800">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/day-1">Day 1</router-link> |
+        <router-link to="/day-2">Day 2</router-link>
+      </div>
+
+      <!-- main -->
+      <router-view/>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    toLightMode() {
+      console.log('light');
+    },
+    toDarkMode() {
+      console.log('dark');
+    },
+  },
+};
+</script>
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
   color: #2c3e50;
 }
 
