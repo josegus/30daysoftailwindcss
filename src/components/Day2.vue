@@ -1,9 +1,5 @@
 <template>
-  <div v-if="useCardStyle">
-    <CardChallenge :challenge="challenge" />
-  </div>
-
-  <div v-else class="space-y-4">
+  <div class="space-y-4">
     <div>
       <div class="font-bold text-xl">Headings</div>
 
@@ -55,28 +51,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import CardChallenge from '@/components/CardChallenge.vue';
-
-export default {
-  props: {
-    useCardStyle: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-  },
-  components: {
-    CardChallenge,
-  },
-  created() {
-    this.$emit('challenge', this.challenge);
-  },
-  data() {
-    return {
-      challenge: 'Write some text including headings and subheadings, quotes, italics. Train your typography.',
-    };
-  },
-};
-</script>

@@ -1,18 +1,13 @@
 <template>
-  <div class="border border-gray-400 rounded bg-white p-2 text-sm">
-      {{ shortChallenge }}
+  <div class="dark:text-white dark:bg-transparent dark:border-gray-500 bg-white text-sm md:p-4 sm:p-2 border border-gray-300 rounded">
+      <h2 class="text-lg">#{{ number }}</h2>
+
+      <div class="mt-2">{{ challenge }}</div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['challenge'],
-  computed: {
-    shortChallenge() {
-      return this.challenge.length > 60
-        ? `${this.challenge.substring(0, 60)}..`
-        : this.challenge;
-    },
-  },
+  props: ['number', 'challenge'],
 };
 </script>

@@ -1,9 +1,5 @@
 <template>
-  <div v-if="useCardStyle">
-    <CardChallenge :challenge="challenge" />
-  </div>
-
-  <div v-else class="space-y-4">
+  <div class="space-y-4">
     <p>
       I read the docs and installing Tailwindcss is a little bit overwhelming on some project.
     </p>
@@ -30,28 +26,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import CardChallenge from '@/components/CardChallenge.vue';
-
-export default {
-  props: {
-    useCardStyle: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-  },
-  components: {
-    CardChallenge,
-  },
-  created() {
-    this.$emit('challenge', this.challenge);
-  },
-  data() {
-    return {
-      challenge: 'Install Tailwind CSS without any Javascript Framework locally with purgeCSS, enable the dark mode option, preferences or class is up to you.',
-    };
-  },
-};
-</script>
