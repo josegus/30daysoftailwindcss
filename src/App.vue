@@ -19,7 +19,8 @@
         <router-link exact-active-class="dark:text-green-400 text-green-400" to="/">Home</router-link> |
         <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-1">Day 1</router-link> |
         <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-2">Day 2</router-link> |
-        <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-3">Day 3</router-link>
+        <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-3">Day 3</router-link> |
+        <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-4">Day 4</router-link>
       </div>
 
       <!-- main -->

@@ -20,6 +20,7 @@ import ChallengeHeader from '../components/ChallengeHeader.vue';
 import Day1 from '../components/Day1.vue';
 import Day2 from '../components/Day2.vue';
 import Day3 from '../components/Day3.vue';
+import Day4 from '../components/Day4.vue';
 
 export default {
   components: {
@@ -27,6 +28,7 @@ export default {
     Day1,
     Day2,
     Day3,
+    Day4,
   },
   computed: {
     day() {
