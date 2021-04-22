@@ -19,12 +19,14 @@ import challenges from '@/challenges';
 import ChallengeHeader from '../components/ChallengeHeader.vue';
 import Day1 from '../components/Day1.vue';
 import Day2 from '../components/Day2.vue';
+import Day3 from '../components/Day3.vue';
 
 export default {
   components: {
     ChallengeHeader,
     Day1,
     Day2,
+    Day3,
   },
   computed: {
     day() {
