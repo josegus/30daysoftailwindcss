@@ -1,5 +1,6 @@
 <template>
     <button
+      type="button"
       class="text-white rounded"
       :class="extraClass"
       :disabled="isDisabled"
@@ -21,7 +22,7 @@ export default {
       required: false,
       default: false,
     },
-    type: {
+    buttonType: {
       type: String,
       required: false,
       default: 'primary',
@@ -31,19 +32,19 @@ export default {
     return {
       buttonTypeClass: {
         primary: {
-          backgroundColor: 'blue',
+          backgroundColor: 'red',
           default: 500,
           hover: 600,
         },
         secondary: {
-          backgroundColor: 'purple',
-          default: 600,
-          hover: 700,
-        },
-        alternative: {
           backgroundColor: 'yellow',
           default: 400,
           hover: 500,
+        },
+        alternative: {
+          backgroundColor: 'green',
+          default: 500,
+          hover: 600,
         },
       },
     };
@@ -65,7 +66,7 @@ export default {
     typeClass() {
       let extraClass = this.buildButtonTypeClass('primary');
 
-      switch (this.type) {
+      switch (this.buttonType) {
         case 'primary':
           break;
         case 'secondary':

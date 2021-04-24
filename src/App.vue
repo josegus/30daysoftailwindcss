@@ -20,7 +20,8 @@
         <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-1">Day 1</router-link> |
         <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-2">Day 2</router-link> |
         <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-3">Day 3</router-link> |
-        <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-4">Day 4</router-link>
+        <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-4">Day 4</router-link> |
+        <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-5">Day 5</router-link>
       </div>
 
       <!-- main -->
@@ -68,8 +69,4 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
-
-/* #nav a.router-link-exact-active {
-  color: #42b983;
-} */
 </style>
