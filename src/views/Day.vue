@@ -2,7 +2,7 @@
   <div class="pb-8">
     <h1 class="font-bold text-white bg-gray-800 p-4 text-4xl text-center">Day #{{ day }}</h1>
 
-    <ChallengeHeader>
+    <ChallengeHeader class="sm:px-0 px-4">
       {{ challenge }}
     </ChallengeHeader>
 
@@ -22,6 +22,7 @@ import Day2 from '../components/Day2.vue';
 import Day3 from '../components/Day3.vue';
 import Day4 from '../components/Day4.vue';
 import Day5 from '../components/Day5.vue';
+import Day6 from '../components/Day6.vue';
 
 export default {
   components: {
@@ -31,6 +32,7 @@ export default {
     Day3,
     Day4,
     Day5,
+    Day6,
   },
   computed: {
     day() {

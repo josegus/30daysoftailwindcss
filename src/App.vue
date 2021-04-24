@@ -1,6 +1,12 @@
 <template>
   <div class="dark:bg-gray-700 bg-gray-100 min-h-screen">
 
+    <div class="absolute top-4 left-4">
+      <a href="https://github.com/josegus/30daysoftailwindcss" class="dark:bg-gray-900 hover:bg-gray-800 bg-gray-400 transition-colors duration-300 rounded-full p-2 inline-block" title="Open github repository" target="_blank">
+        <img class="w-4 filter invert" src="../public/brands/github.svg" alt="Github">
+      </a>
+    </div>
+
     <!-- light/dark mode -->
     <div class="absolute right-4 top-4">
       <button v-if="isInDarkMode" @click="toLightMode()" class="text-yellow-500 focus:outline-none" title="Switch to light mode">
@@ -15,13 +21,14 @@
     <div id="app" class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
       <!-- nav -->
-      <div id="nav" class="text-center p-8 font-bold text-gray-600 dark:text-white">
+      <div id="nav" class="sm:py-8 py-16 px-8 text-center font-bold text-gray-600 dark:text-white">
         <router-link exact-active-class="dark:text-green-400 text-green-400" to="/">Home</router-link> |
         <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-1">Day 1</router-link> |
         <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-2">Day 2</router-link> |
         <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-3">Day 3</router-link> |
         <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-4">Day 4</router-link> |
-        <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-5">Day 5</router-link>
+        <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-5">Day 5</router-link> |
+        <router-link exact-active-class="dark:text-green-400 text-green-400" to="/day-6">Day 6</router-link>
       </div>
 
       <!-- main -->
