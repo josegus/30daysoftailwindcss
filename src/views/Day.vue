@@ -23,6 +23,7 @@ import Day3 from '../components/Day3.vue';
 import Day4 from '../components/Day4.vue';
 import Day5 from '../components/Day5.vue';
 import Day6 from '../components/Day6.vue';
+import Day7 from '../components/Day7.vue';
 
 export default {
   components: {
@@ -33,6 +34,7 @@ export default {
     Day4,
     Day5,
     Day6,
+    Day7,
   },
   computed: {
     day() {
